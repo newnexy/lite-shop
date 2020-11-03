@@ -1,0 +1,668 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~quill/dist/quill.snow.sass"
+
+*
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+ul
+  padding: 0
+  margin: 0
+
+  li
+    list-style: none
+
+p
+  padding: 0
+  margin: 0
+
+a
+  padding: 0
+  margin: 0
+  text-decoration: none
+  color: #4F94B4
+  cursor: pointer
+  outline: 0
+
+\::-moz-selection, ::selection
+  background: #6666669c
+
+\::-webkit-scrollbar
+  width: 8px
+
+\::-webkit-scrollbar-track
+  background: #cecece
+
+\::-webkit-scrollbar-thumb
+  background: #4e4e4e
+
+  &:hover
+    background: #E31837
+
+body
+  font-family: "FuturaPT-Book"
+  margin: 0
+  padding: 0
+  background-color: #F7F7F7
+
+.header__line
+  max-width: 1200px
+  width: 100%
+  height: 100%
+  margin: 0 auto
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+
+.header__line--first-line
+  height: 75px
+  -webkit-box-align: center
+  -webkit-align-items: center
+  -ms-flex-align: center
+  align-items: center
+
+.header__line--second-line
+  height: 50px
+  -webkit-box-align: center
+  -webkit-align-items: center
+  -ms-flex-align: center
+  align-items: center
+
+.header__categories
+  width: 250px
+  height: 100%
+  position: relative
+
+.header__search
+  min-width: 30%
+  margin-left: 30px
+
+.main-header-wrapper
+  z-index: 3
+  position: relative
+
+.main-header-first-line-wrapper
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-shadow: 0 0 10px rgba(216, 216, 216, 0.6)
+  box-shadow: 0 0 10px rgba(216, 216, 216, 0.6)
+  background-color: #ffffff
+  z-index: 2
+  position: relative
+
+.header-logo__link
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  height: 100%
+  width: 185px
+  -webkit-box-align: center
+  -webkit-align-items: center
+  -ms-flex-align: center
+  align-items: center
+  -webkit-box-pack: center
+  -webkit-justify-content: center
+  -ms-flex-pack: center
+  justify-content: center
+  margin-left: 32px
+
+.header-logo__img
+  display: block
+  width: 100%
+
+.utility-bar
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  margin-left: auto
+
+.utility-bar__link
+  font-family: "FuturaPT-Light"
+  -webkit-transition: all 0.3s ease
+  -o-transition: all 0.3s ease
+  transition: all 0.3s ease
+  color: #333333
+  font-size: 20px
+  margin-right: 20px
+  position: relative
+
+  &:last-child
+    margin-right: 0
+
+  &:hover
+    color: red
+
+    &:after
+      width: 100%
+
+  &:after
+    content: ""
+    position: absolute
+    height: 0.5px
+    background-color: red
+    width: 0
+    left: 50%
+    bottom: -2px
+    -webkit-transform: translateX(-50%)
+    -ms-transform: translateX(-50%)
+    transform: translateX(-50%)
+    -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all
+    -o-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all
+
+.utility-bar__link--gift-Cards
+  margin-right: 40px
+
+  &:before
+    content: ''
+    width: 0.5px
+    height: 70%
+    background-color: #333333
+    position: absolute
+    top: 50%
+    right: -20px
+    -webkit-transform: translate(0%, -50%)
+    -ms-transform: translate(0%, -50%)
+    transform: translate(0%, -50%)
+    cursor: default
+
+.utility-bar__link--login
+  padding-left: 30px
+
+  &:hover
+    color: #333333
+
+    &:after
+      display: none
+
+  &:before
+    content: ''
+    width: 20px
+    height: 20px
+    position: absolute
+    top: 50%
+    left: 0
+    -webkit-transform: translate(0%, -50%)
+    -ms-transform: translate(0%, -50%)
+    transform: translate(0%, -50%)
+    background-repeat: no-repeat
+    background-size: 100% 100%
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2019.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Capa_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20viewBox%3D%220%200%20480%20480%22%20style%3D%22enable-background%3Anew%200%200%20480%20480%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cg%3E%0D%0A%09%09%3Cpath%20d%3D%22M240%2C0C107.664%2C0%2C0%2C107.664%2C0%2C240c0%2C57.96%2C20.656%2C111.184%2C54.992%2C152.704c0.088%2C0.12%2C0.096%2C0.272%2C0.192%2C0.384%0D%0A%09%09%09c24.792%2C29.896%2C55.928%2C52.816%2C90.624%2C67.624c0.4%2C0.168%2C0.792%2C0.352%2C1.192%2C0.52c2.808%2C1.184%2C5.648%2C2.28%2C8.496%2C3.352%0D%0A%09%09%09c1.12%2C0.424%2C2.24%2C0.856%2C3.376%2C1.264c2.456%2C0.88%2C4.928%2C1.712%2C7.416%2C2.512c1.592%2C0.512%2C3.184%2C1.016%2C4.792%2C1.496%0D%0A%09%09%09c2.2%2C0.656%2C4.408%2C1.288%2C6.632%2C1.888c1.952%2C0.528%2C3.92%2C1.016%2C5.888%2C1.488c1.992%2C0.48%2C3.992%2C0.96%2C6%2C1.384%0D%0A%09%09%09c2.24%2C0.48%2C4.504%2C0.904%2C6.776%2C1.32c1.824%2C0.336%2C3.64%2C0.688%2C5.48%2C0.984c2.52%2C0.408%2C5.056%2C0.728%2C7.6%2C1.056%0D%0A%09%09%09c1.64%2C0.208%2C3.272%2C0.448%2C4.92%2C0.624c2.88%2C0.304%2C5.784%2C0.52%2C8.696%2C0.72c1.352%2C0.096%2C2.696%2C0.24%2C4.056%2C0.312%0D%0A%09%09%09c4.248%2C0.24%2C8.544%2C0.368%2C12.872%2C0.368s8.624-0.128%2C12.888-0.352c1.36-0.072%2C2.704-0.216%2C4.056-0.312%0D%0A%09%09%09c2.912-0.208%2C5.816-0.416%2C8.696-0.72c1.648-0.176%2C3.28-0.416%2C4.92-0.624c2.544-0.328%2C5.08-0.648%2C7.6-1.056%0D%0A%09%09%09c1.832-0.296%2C3.656-0.648%2C5.48-0.984c2.264-0.416%2C4.528-0.84%2C6.776-1.32c2.008-0.432%2C4-0.904%2C6-1.384%0D%0A%09%09%09c1.968-0.48%2C3.936-0.968%2C5.888-1.488c2.224-0.592%2C4.432-1.232%2C6.632-1.888c1.608-0.48%2C3.2-0.984%2C4.792-1.496%0D%0A%09%09%09c2.488-0.8%2C4.96-1.632%2C7.416-2.512c1.128-0.408%2C2.248-0.84%2C3.376-1.264c2.856-1.072%2C5.688-2.176%2C8.496-3.352%0D%0A%09%09%09c0.4-0.168%2C0.792-0.352%2C1.192-0.52c34.688-14.808%2C65.832-37.728%2C90.624-67.624c0.096-0.112%2C0.104-0.272%2C0.192-0.384%0D%0A%09%09%09C459.344%2C351.184%2C480%2C297.96%2C480%2C240C480%2C107.664%2C372.336%2C0%2C240%2C0z%20M337.256%2C441.76c-0.12%2C0.056-0.232%2C0.12-0.352%2C0.176%0D%0A%09%09%09c-2.856%2C1.376-5.76%2C2.672-8.688%2C3.936c-0.664%2C0.28-1.32%2C0.568-1.984%2C0.848c-2.56%2C1.072-5.152%2C2.088-7.76%2C3.064%0D%0A%09%09%09c-1.088%2C0.408-2.176%2C0.808-3.272%2C1.192c-2.312%2C0.824-4.632%2C1.616-6.976%2C2.368c-1.456%2C0.464-2.92%2C0.904-4.384%2C1.336%0D%0A%09%09%09c-2.08%2C0.624-4.168%2C1.224-6.28%2C1.784c-1.776%2C0.472-3.568%2C0.904-5.36%2C1.328c-1.88%2C0.448-3.752%2C0.904-5.648%2C1.304%0D%0A%09%09%09c-2.072%2C0.44-4.16%2C0.816-6.24%2C1.192c-1.688%2C0.312-3.368%2C0.64-5.072%2C0.912c-2.344%2C0.368-4.712%2C0.664-7.072%2C0.96%0D%0A%09%09%09c-1.496%2C0.192-2.984%2C0.416-4.496%2C0.576c-2.696%2C0.288-5.416%2C0.472-8.128%2C0.664c-1.208%2C0.08-2.408%2C0.216-3.632%2C0.28%0D%0A%09%09%09c-3.96%2C0.208-7.928%2C0.32-11.912%2C0.32s-7.952-0.112-11.904-0.32c-1.216-0.064-2.416-0.192-3.632-0.28%0D%0A%09%09%09c-2.72-0.184-5.432-0.376-8.128-0.664c-1.512-0.16-3-0.384-4.496-0.576c-2.36-0.296-4.728-0.592-7.072-0.96%0D%0A%09%09%09c-1.704-0.272-3.384-0.6-5.072-0.912c-2.088-0.376-4.176-0.76-6.24-1.192c-1.896-0.4-3.776-0.856-5.648-1.304%0D%0A%09%09%09c-1.792-0.432-3.584-0.856-5.36-1.328c-2.104-0.56-4.2-1.168-6.28-1.784c-1.464-0.432-2.928-0.872-4.384-1.336%0D%0A%09%09%09c-2.344-0.752-4.672-1.544-6.976-2.368c-1.096-0.392-2.184-0.792-3.272-1.192c-2.608-0.976-5.2-1.992-7.76-3.064%0D%0A%09%09%09c-0.664-0.272-1.312-0.56-1.976-0.84c-2.928-1.256-5.832-2.56-8.696-3.936c-0.12-0.056-0.232-0.112-0.352-0.176%0D%0A%09%09%09c-27.912-13.504-52.568-32.672-72.576-55.952c15.464-56.944%2C59.24-102.848%2C115.56-121.112c1.112%2C0.68%2C2.272%2C1.288%2C3.416%2C1.928%0D%0A%09%09%09c0.672%2C0.376%2C1.336%2C0.776%2C2.016%2C1.136c2.384%2C1.264%2C4.8%2C2.448%2C7.272%2C3.512c1.896%2C0.832%2C3.856%2C1.536%2C5.808%2C2.256%0D%0A%09%09%09c0.384%2C0.136%2C0.768%2C0.288%2C1.152%2C0.424c10.848%2C3.84%2C22.456%2C6.04%2C34.6%2C6.04s23.752-2.2%2C34.592-6.04%0D%0A%09%09%09c0.384-0.136%2C0.768-0.288%2C1.152-0.424c1.952-0.72%2C3.912-1.424%2C5.808-2.256c2.472-1.064%2C4.888-2.248%2C7.272-3.512%0D%0A%09%09%09c0.68-0.368%2C1.344-0.76%2C2.016-1.136c1.144-0.64%2C2.312-1.248%2C3.432-1.936c56.32%2C18.272%2C100.088%2C64.176%2C115.56%2C121.112%0D%0A%09%09%09C389.824%2C409.08%2C365.168%2C428.248%2C337.256%2C441.76z%20M152%2C176c0-48.52%2C39.48-88%2C88-88s88%2C39.48%2C88%2C88%0D%0A%09%09%09c0%2C30.864-16.008%2C58.024-40.128%2C73.736c-3.152%2C2.048-6.432%2C3.88-9.8%2C5.48c-0.4%2C0.192-0.792%2C0.392-1.192%2C0.576%0D%0A%09%09%09c-23.168%2C10.536-50.592%2C10.536-73.76%2C0c-0.4-0.184-0.8-0.384-1.192-0.576c-3.376-1.6-6.648-3.432-9.8-5.48%0D%0A%09%09%09C168.008%2C234.024%2C152%2C206.864%2C152%2C176z%20M421.832%2C370.584c-18.136-53.552-59.512-96.832-112.376-117.392%0D%0A%09%09%09C330.6%2C234.144%2C344%2C206.64%2C344%2C176c0-57.344-46.656-104-104-104s-104%2C46.656-104%2C104c0%2C30.64%2C13.4%2C58.144%2C34.552%2C77.192%0D%0A%09%09%09c-52.864%2C20.568-94.24%2C63.84-112.376%2C117.392C31.672%2C333.792%2C16%2C288.704%2C16%2C240C16%2C116.488%2C116.488%2C16%2C240%2C16s224%2C100.488%2C224%2C224%0D%0A%09%09%09C464%2C288.704%2C448.328%2C333.792%2C421.832%2C370.584z%22/%3E%0D%0A%09%3C/g%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A")
+
+.flags-block
+  width: 26px
+  height: 16px
+  margin-left: 20px
+  cursor: pointer
+  display: block
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%20standalone%3D%22no%22%3F%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%0D%0A%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20version%3D%221.1%22%20width%3D%221100%22%20height%3D%22800%22%20id%3D%22Flag_of_Norway%22%3E%0D%0A%3Crect%20width%3D%221100%22%20height%3D%22800%22%20fill%3D%22%23ef2b2d%22/%3E%0D%0A%3Crect%20width%3D%22200%22%20height%3D%22800%22%20x%3D%22300%22%20fill%3D%22white%22/%3E%0D%0A%3Crect%20width%3D%221100%22%20height%3D%22200%22%20y%3D%22300%22%20fill%3D%22white%22/%3E%0D%0A%3Crect%20width%3D%22100%22%20height%3D%22800%22%20x%3D%22350%22%20fill%3D%22%23002868%22/%3E%0D%0A%3Crect%20width%3D%221100%22%20height%3D%22100%22%20y%3D%22350%22%20fill%3D%22%23002868%22/%3E%0D%0A%3C/svg%3E%0D%0A")
+
+.main-header-second-line-wrapper
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  background-color: #ffffff
+  z-index: 1
+
+.banner
+  width: 100%
+  height: 470px
+  position: relative
+  z-index: 1
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: center
+  -webkit-justify-content: center
+  -ms-flex-pack: center
+  justify-content: center
+  -webkit-box-align: center
+  -webkit-align-items: center
+  -ms-flex-align: center
+  align-items: center
+
+.banner__gradient
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  background: -webkit-linear-gradient(left, #fad3c4 0%, #fad3c4 50%, #fad3c4 100%)
+
+.banner__slider
+  max-width: 1400px
+  overflow: hidden
+  height: 100%
+  z-index: 2
+
+.banner__test-img
+  display: block
+  width: 100%
+
+.header-catalog-button
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  position: relative
+  width: 100%
+  background-color: #E31837
+  height: 100%
+  -webkit-box-align: center
+  -webkit-align-items: center
+  -ms-flex-align: center
+  align-items: center
+  padding: 0 20px
+  cursor: default
+
+.header-catalog-button__icon
+  width: 22px
+  height: 22px
+  display: block
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%22284%22%20height%3D%22280%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%0A%20%3Cdefs%3E%0A%20%20%3Cstyle%3E.a%7Bfill%3A%23929292%3B%7D.b%7Bfill%3Anone%3B%7D.c%7Bfill%3A%23f2f2f2%3B%7D.d%7Bfill%3A%23e0e0e0%3B%7D.e%7Bfill%3A%23595959%3B%7D.f%7Bfill%3A%23e31837%3B%7D.g%2C.p%2C.w%7Bfill%3A%23fff%3B%7D.h%7Bfill%3A%2373b73b%3B%7D.i%7Bfill%3A%23424242%3B%7D.j%7Bfill%3Aurl%28%23a%29%3B%7D.k%7Bfill%3Aurl%28%23b%29%3B%7D.l%7Bfill%3Aurl%28%23c%29%3B%7D.m%7Bfill%3Aurl%28%23d%29%3B%7D.n%7Bopacity%3A0.2%3B%7D.n%2C.o%2C.p%2C.v%2C.w%7Bisolation%3Aisolate%3B%7D.o%7Bopacity%3A0.12%3B%7D.p%7Bopacity%3A0.25%3B%7D.q%7Bfill%3A%23404040%3B%7D.r%7Bfill%3A%23757575%3B%7D.s%7Bfill%3A%238cbbf9%3B%7D.t%7Bfill%3A%231877f2%3B%7D.u%7Bfill%3Aurl%28%23i%29%3B%7D.v%7Bopacity%3A0.8%3Bfill%3Aurl%28%23j%29%3B%7D.w%7Bopacity%3A0.5%3B%7D.x%7Bfill%3A%2396d2f0%3B%7D.y%7Bfill%3A%232da5e1%3B%7D.z%7Bfill%3A%23e68f8f%3B%7D.aa%7Bfill%3A%23cd201f%3B%7D%3C/style%3E%0A%20%20%3Csymbol%20viewBox%3D%220%200%2020%2020%22%20id%3D%22t%22%3E%0A%20%20%20%3Cpath%20id%3D%22svg_41%22%20d%3D%22m19%2C1l-4%2C0l0%2C4l4%2C0l0%2C-4zm0%2C11l-4%2C0l0%2C-4l4%2C0l0%2C4zm0%2C7l-4%2C0l0%2C-4l4%2C0l0%2C4zm-7%2C-14l-4%2C0l0%2C-4l4%2C0l0%2C4zm0%2C7l-4%2C0l0%2C-4l4%2C0l0%2C4zm0%2C7l-4%2C0l0%2C-4l4%2C0l0%2C4zm-7%2C-14l-4%2C0l0%2C-4l4%2C0l0%2C4zm0%2C7l-4%2C0l0%2C-4l4%2C0l0%2C4zm0%2C7l-4%2C0l0%2C-4l4%2C0l0%2C4z%22%20class%3D%22g%22/%3E%0A%20%20%20%3Crect%20id%3D%22svg_42%22%20height%3D%2220%22%20width%3D%2220%22%20class%3D%22b%22/%3E%0A%20%20%3C/symbol%3E%0A%20%3C/defs%3E%0A%20%3Ctitle%3ESprite_Header_and_Footer%3C/title%3E%0A%20%3Cg%3E%0A%20%20%3Ctitle%3Ebackground%3C/title%3E%0A%20%20%3Crect%20fill%3D%22none%22%20id%3D%22canvas_background%22%20height%3D%22602%22%20width%3D%22802%22%20y%3D%22-1%22%20x%3D%22-1%22/%3E%0A%20%3C/g%3E%0A%20%3Cg%3E%0A%20%20%3Ctitle%3ELayer%201%3C/title%3E%0A%20%20%3Cuse%20x%3D%22-83.84613%22%20y%3D%22116.53844%22%20id%3D%22svg_105%22%20xlink%3Ahref%3D%22%23t%22%20transform%3D%22matrix%2814.163291087604648%2C0%2C0%2C-13.957600619994992%2C1187.750387343766%2C1906.3653726855475%29%20%22%20height%3D%2220%22%20width%3D%2220%22/%3E%0A%20%3C/g%3E%0A%3C/svg%3E")
+
+.header-catalog-button__text
+  color: #ffffff
+  font-family: FuturaPT-Book
+  font-size: 22px
+  margin-left: 15px
+
+.catalog-categories-list
+  position: absolute
+  width: 100%
+  min-height: 470px
+  background-color: #ffffff
+  -webkit-box-shadow: 0 1px 6px 0 #70707066
+  box-shadow: 0 1px 6px 0 #70707066
+  padding-top: 6px
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -webkit-flex-direction: column
+  -ms-flex-direction: column
+  flex-direction: column
+
+.catalog-categories-list__link
+  font-family: FuturaPT-Book
+  font-size: 14px
+  color: #595959
+  height: 28px
+  line-height: 28px
+  padding-left: 23px
+  display: block
+  width: 100%
+  position: relative
+
+  &:before
+    content: ''
+    width: 8px
+    height: 8px
+    position: absolute
+    top: 50%
+    right: 10px
+    -webkit-transform: translate(0%, -50%)
+    -ms-transform: translate(0%, -50%)
+    transform: translate(0%, -50%)
+    background-repeat: no-repeat
+    background-size: 100% 100%
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20version%3D%221.1%22%20id%3D%22Capa_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20490.8%20490.8%22%20style%3D%22enable-background%3Anew%200%200%20490.8%20490.8%3B%22%20xml%3Aspace%3D%22preserve%22%20width%3D%22512px%22%20height%3D%22512px%22%3E%3Cg%3E%3Cpath%20style%3D%22fill%3A%23F44336%3B%22%20d%3D%22M135.685%2C3.128c-4.237-4.093-10.99-3.975-15.083%2C0.262c-3.992%2C4.134-3.992%2C10.687%2C0%2C14.82%20%20l227.115%2C227.136L120.581%2C472.461c-4.237%2C4.093-4.354%2C10.845-0.262%2C15.083c4.093%2C4.237%2C10.845%2C4.354%2C15.083%2C0.262%20%20c0.089-0.086%2C0.176-0.173%2C0.262-0.262l234.667-234.667c4.164-4.165%2C4.164-10.917%2C0-15.083L135.685%2C3.128z%22%20data-original%3D%22%23F44336%22/%3E%3Cpath%20d%3D%22M128.133%2C490.68c-5.891%2C0.011-10.675-4.757-10.686-10.648c-0.005-2.84%2C1.123-5.565%2C3.134-7.571l227.136-227.115%20%20L120.581%2C18.232c-4.171-4.171-4.171-10.933%2C0-15.104c4.171-4.171%2C10.933-4.171%2C15.104%2C0l234.667%2C234.667%20%20c4.164%2C4.165%2C4.164%2C10.917%2C0%2C15.083L135.685%2C487.544C133.685%2C489.551%2C130.967%2C490.68%2C128.133%2C490.68z%22%20data-original%3D%22%23000000%22%20class%3D%22active-path%22%20data-old_color%3D%22%23000000%22%20style%3D%22fill%3A%23A5A5A5%22/%3E%3C/g%3E%20%3C/svg%3E%0A")
+
+.catalog-categories-list__sub-list
+  position: absolute
+  width: 950px
+  height: 100%
+  background-color: #ffffff
+  left: 100%
+  top: 0
+  display: none
+  -webkit-box-shadow: 0 1px 6px 0 #70707066
+  box-shadow: 0 1px 6px 0 #70707066
+  padding: 10px 0
+
+.catalog-categories-list__more-categories
+  margin-top: auto
+  margin-bottom: 10px
+  width: 100%
+  height: 28px
+  position: relative
+
+  &:before
+    position: absolute
+    content: ''
+    width: 20px
+    height: 20px
+    top: 50%
+    left: 50%
+    -webkit-transform: translate(-50%, -50%)
+    -ms-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
+    background-repeat: no-repeat
+    background-size: 100% 100%
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20version%3D%221.1%22%20id%3D%22Capa_1%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22512px%22%20height%3D%22512px%22%20viewBox%3D%220%200%20451.847%20451.847%22%20style%3D%22enable-background%3Anew%200%200%20451.847%20451.847%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%3Cg%3E%0A%09%3Cpath%20d%3D%22M225.923%2C354.706c-8.098%2C0-16.195-3.092-22.369-9.263L9.27%2C151.157c-12.359-12.359-12.359-32.397%2C0-44.751%20%20%20c12.354-12.354%2C32.388-12.354%2C44.748%2C0l171.905%2C171.915l171.906-171.909c12.359-12.354%2C32.391-12.354%2C44.744%2C0%20%20%20c12.365%2C12.354%2C12.365%2C32.392%2C0%2C44.751L248.292%2C345.449C242.115%2C351.621%2C234.018%2C354.706%2C225.923%2C354.706z%22%20data-original%3D%22%23000000%22%20class%3D%22active-path%22%20data-old_color%3D%22%23000000%22%20fill%3D%22%23e1e1e1%22/%3E%0A%3C/g%3E%3C/g%3E%20%3C/svg%3E%0A")
+
+.sub-list
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  width: 33.3%
+  overflow: hidden
+  padding-left: 25px
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -webkit-flex-direction: column
+  -ms-flex-direction: column
+  flex-direction: column
+
+  &:first-child
+    padding-left: 0
+
+.sub-list__wrapper
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  width: -webkit-calc(100% - 280px)
+  width: calc(100% - 280px)
+  padding: 0 24px
+
+.sub-list__title-link
+  font-size: 14px
+  font-family: FuturaPT-Book
+  font-weight: 700
+  width: 100%
+  display: inline-block
+  line-height: 14px
+  padding: 6px 10px 5px
+
+  &:hover
+    text-decoration: underline
+
+.second-sub-list
+  position: relative
+  padding: 3.5px 10px 7px
+
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 0.5px
+    background-color: #dadada
+    top: 0
+    left: 0
+
+.second-sub-list__item
+  padding-top: 1.5px
+  white-space: nowrap
+  overflow: hidden
+  -o-text-overflow: ellipsis
+  text-overflow: ellipsis
+  max-width: 180px
+
+.second-sub-list__link
+  font-size: 14px
+  color: #595959
+
+.second-sub-list__link--all-products
+  text-decoration: underline
+  position: relative
+
+  &:before
+    content: ''
+    width: 8px
+    height: 8px
+    position: absolute
+    position: absolute
+    top: 50%
+    right: -15px
+    -webkit-transform: translate(0%, -50%)
+    -ms-transform: translate(0%, -50%)
+    transform: translate(0%, -50%)
+    background-repeat: no-repeat
+    background-size: 100% 100%
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20id%3D%22Capa_1%22%20enable-background%3D%22new%200%200%20482.238%20482.238%22%20height%3D%22512px%22%20viewBox%3D%220%200%20482.238%20482.238%22%20width%3D%22512px%22%3E%3Cg%3E%3Cpath%20d%3D%22m275.429%20447.793%20206.808-206.674-206.74-206.674-24.354%2024.287%20165.164%20165.164h-416.307v34.446h416.306l-165.231%20165.231z%22%20data-original%3D%22%23000000%22%20class%3D%22active-path%22%20data-old_color%3D%22%23000000%22%20fill%3D%22%23000000%22/%3E%3C/g%3E%20%3C/svg%3E%0A")
+
+.second-sub-list__link:hover
+  text-decoration: underline
+
+.promotions
+  width: 270px
+  margin-right: 10px
+  height: 100%
+  background-color: pink
+
+.promotions__link
+  display: block
+  width: 100%
+  height: 100%
+
+.promotions__img
+  width: 100%
+  height: 100%
+
+.catalog-categories-list__item:hover
+  .catalog-categories-list__link
+    color: #333333
+    font-weight: 700
+    -webkit-box-shadow: -2px 6px 6px -5px #ededed, 3px 5px 6px -5px #ededed
+    box-shadow: -2px 6px 6px -5px #ededed, 3px 5px 6px -5px #ededed
+
+    &:before
+      background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20version%3D%221.1%22%20id%3D%22Layer_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20492.004%20492.004%22%20style%3D%22enable-background%3Anew%200%200%20492.004%20492.004%3B%22%20xml%3Aspace%3D%22preserve%22%20width%3D%22512px%22%20height%3D%22512px%22%3E%3Cg%3E%3Cg%3E%0A%09%3Cg%3E%0A%09%09%3Cpath%20d%3D%22M382.678%2C226.804L163.73%2C7.86C158.666%2C2.792%2C151.906%2C0%2C144.698%2C0s-13.968%2C2.792-19.032%2C7.86l-16.124%2C16.12%20%20%20%20c-10.492%2C10.504-10.492%2C27.576%2C0%2C38.064L293.398%2C245.9l-184.06%2C184.06c-5.064%2C5.068-7.86%2C11.824-7.86%2C19.028%20%20%20%20c0%2C7.212%2C2.796%2C13.968%2C7.86%2C19.04l16.124%2C16.116c5.068%2C5.068%2C11.824%2C7.86%2C19.032%2C7.86s13.968-2.792%2C19.032-7.86L382.678%2C265%20%20%20%20c5.076-5.084%2C7.864-11.872%2C7.848-19.088C390.542%2C238.668%2C387.754%2C231.884%2C382.678%2C226.804z%22%20data-original%3D%22%23000000%22%20class%3D%22active-path%22%20data-old_color%3D%22%23000000%22%20fill%3D%22%23333333%22/%3E%0A%09%3C/g%3E%0A%3C/g%3E%3C/g%3E%20%3C/svg%3E%0A")
+
+  .catalog-categories-list__sub-list
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+
+.search
+  min-width: 30%
+  margin-left: 30px
+
+.search-form__form
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  position: relative
+
+  &:before
+    content: ''
+    width: 100%
+    height: 1px
+    bottom: 0
+    left: 0
+    background: #D5D5D5
+    position: absolute
+
+.search-form__label
+  width: 100%
+
+.search-form__input
+  border: none
+  color: #333333
+  width: 100%
+  font-size: 16px
+  font-family: FuturaPT-Book
+  padding: 0
+  padding-bottom: 4px
+  outline: none
+  padding-right: 10px
+
+  &::-webkit-input-placeholder
+    color: #333333
+    -webkit-transition: 0.3s
+    transition: 0.3s
+
+  &::-moz-placeholder
+    color: #333333
+    -moz-transition: 0.3s
+    transition: 0.3s
+
+  &:-ms-input-placeholder, &::-ms-input-placeholder
+    color: #333333
+    -ms-transition: 0.3s
+    transition: 0.3s
+
+  &::placeholder
+    color: #333333
+    -webkit-transition: 0.3s
+    -o-transition: 0.3s
+    transition: 0.3s
+
+  &:focus
+    &::-webkit-input-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
+      color: #b3b3b3
+
+.search-form__submit-button
+  outline: none
+  border: none
+  background: transparent
+  width: 20px
+  height: 20px
+  cursor: pointer
+  position: relative
+
+  &:before
+    content: ''
+    position: absolute
+    width: 16px
+    height: 16px
+    top: 50%
+    left: 50%
+    -webkit-transform: translate(-50%, -50%)
+    -ms-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
+    background-repeat: no-repeat
+    background-size: 100% 100%
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20version%3D%221.1%22%20id%3D%22Capa_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20192.904%20192.904%22%20style%3D%22enable-background%3Anew%200%200%20192.904%20192.904%3B%22%20xml%3Aspace%3D%22preserve%22%20width%3D%22512px%22%20height%3D%22512px%22%20class%3D%22%22%3E%3Cg%3E%3Cpath%20d%3D%22M190.707%2C180.101l-47.078-47.077c11.702-14.072%2C18.752-32.142%2C18.752-51.831C162.381%2C36.423%2C125.959%2C0%2C81.191%2C0%20%20C36.422%2C0%2C0%2C36.423%2C0%2C81.193c0%2C44.767%2C36.422%2C81.187%2C81.191%2C81.187c19.688%2C0%2C37.759-7.049%2C51.831-18.751l47.079%2C47.078%20%20c1.464%2C1.465%2C3.384%2C2.197%2C5.303%2C2.197c1.919%2C0%2C3.839-0.732%2C5.304-2.197C193.637%2C187.778%2C193.637%2C183.03%2C190.707%2C180.101z%20M15%2C81.193%20%20C15%2C44.694%2C44.693%2C15%2C81.191%2C15c36.497%2C0%2C66.189%2C29.694%2C66.189%2C66.193c0%2C36.496-29.692%2C66.187-66.189%2C66.187%20%20C44.693%2C147.38%2C15%2C117.689%2C15%2C81.193z%22%20data-original%3D%22%23000000%22%20class%3D%22active-path%22%20data-old_color%3D%22%23000000%22%20fill%3D%22%23333333%22/%3E%3C/g%3E%20%3C/svg%3E%0A")
+
+.actions
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  margin-left: auto
+
+.actions__item
+  font-family: FuturaPT-Book
+  font-size: 16px
+  color: #333333
+  position: relative
+  margin-left: 30px
+  padding-left: 21px
+
+  &:first-child
+    margin-left: 0
+
+.actions__item--cart:before
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2019.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Capa_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20viewBox%3D%220%200%20423.416%20423.416%22%20style%3D%22enable-background%3Anew%200%200%20423.416%20423.416%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cg%3E%0D%0A%09%09%3Cg%3E%0D%0A%09%09%09%3Cpath%20d%3D%22M420.688%2C145.096c-2.069-2.033-4.961-2.997-7.837-2.612H300.525V92.851c0-49.052-39.764-88.816-88.816-88.816%0D%0A%09%09%09%09s-88.816%2C39.764-88.816%2C88.816v49.633H10.565c-3.135%2C0-6.269%2C0-7.837%2C2.612c-2.106%2C2.024-3.083%2C4.954-2.612%2C7.837L39.3%2C367.137%0D%0A%09%09%09%09c5.474%2C29.881%2C31.275%2C51.746%2C61.649%2C52.245h221.518c30.461-0.749%2C56.208-22.787%2C61.649-52.767L423.3%2C152.933%0D%0A%09%09%09%09C423.771%2C150.05%2C422.794%2C147.12%2C420.688%2C145.096z%20M143.79%2C92.851c0-37.51%2C30.408-67.918%2C67.918-67.918%0D%0A%09%09%09%09c37.51%2C0%2C67.918%2C30.408%2C67.918%2C67.918v49.633H143.79V92.851z%20M363.218%2C364.002c-3.519%2C19.801-20.641%2C34.289-40.751%2C34.482%0D%0A%09%09%09%09H100.949c-20.11-0.193-37.232-14.68-40.751-34.482l-37.094-200.62h377.208L363.218%2C364.002z%22/%3E%0D%0A%09%09%09%3Cpath%20d%3D%22M290.076%2C265.259c5.771%2C0%2C10.449-4.678%2C10.449-10.449v-31.347c0-5.771-4.678-10.449-10.449-10.449%0D%0A%09%09%09%09c-5.771%2C0-10.449%2C4.678-10.449%2C10.449v31.347C279.626%2C260.581%2C284.305%2C265.259%2C290.076%2C265.259z%22/%3E%0D%0A%09%09%09%3Cpath%20d%3D%22M133.341%2C265.259c5.771%2C0%2C10.449-4.678%2C10.449-10.449v-31.347c0-5.771-4.678-10.449-10.449-10.449%0D%0A%09%09%09%09c-5.771%2C0-10.449%2C4.678-10.449%2C10.449v31.347C122.892%2C260.581%2C127.57%2C265.259%2C133.341%2C265.259z%22/%3E%0D%0A%09%09%3C/g%3E%0D%0A%09%3C/g%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3Cg%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A")
+
+.actions__item--wishlist:before
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20viewBox%3D%220%20-28%20512.001%20512%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22m256%20455.515625c-7.289062%200-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187%200-42.070313%2014.425781-80.882813%2040.617188-109.292969%2026.503906-28.746094%2062.871093-44.578125%20102.414062-44.578125%2029.554688%200%2056.621094%209.34375%2080.445312%2027.769531%2012.023438%209.300781%2022.921876%2020.683594%2032.523438%2033.960938%209.605469-13.277344%2020.5-24.660157%2032.527344-33.960938%2023.824218-18.425781%2050.890625-27.769531%2080.445312-27.769531%2039.539063%200%2075.910156%2015.832031%20102.414063%2044.578125%2026.191406%2028.410156%2040.613281%2067.222656%2040.613281%20109.292969%200%2043.300781-16.132812%2082.9375-50.777344%20124.738281-30.992187%2037.398437-75.53125%2075.355469-127.105468%20119.308594-17.625%2015.015625-37.597657%2032.039062-58.328126%2050.167969-5.472656%204.789062-12.503906%207.429687-19.789062%207.429687zm-112.96875-425.523437c-31.066406%200-59.605469%2012.398437-80.367188%2034.914062-21.070312%2022.855469-32.675781%2054.449219-32.675781%2088.964844%200%2036.417968%2013.535157%2068.988281%2043.882813%20105.605468%2029.332031%2035.394532%2072.960937%2072.574219%20123.476562%20115.625l.09375.078126c17.660156%2015.050781%2037.679688%2032.113281%2058.515625%2050.332031%2020.960938-18.253907%2041.011719-35.34375%2058.707031-50.417969%2050.511719-43.050781%2094.136719-80.222656%20123.46875-115.617188%2030.34375-36.617187%2043.878907-69.1875%2043.878907-105.605468%200-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812%200-43.652344%207.234374-62.101562%2021.5-16.441406%2012.71875-27.894532%2028.796874-34.609375%2040.046874-3.453125%205.785157-9.53125%209.238282-16.261719%209.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0%200%22/%3E%3C/svg%3E")
+
+.actions__item:before
+  content: ''
+  position: absolute
+  width: 15px
+  height: 15px
+  top: 50%
+  left: 0
+  -webkit-transform: translate(0%, -50%)
+  -ms-transform: translate(0%, -50%)
+  transform: translate(0%, -50%)
+  background-repeat: no-repeat
+  background-size: 100% 100%
+
+.wrapper
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -webkit-flex-direction: column
+  -ms-flex-direction: column
+  flex-direction: column
+
+.temp
+  min-width: 1200px
+  margin: 30px auto
+  -webkit-box-pack: justify
+  -webkit-justify-content: space-between
+  -ms-flex-pack: justify
+  justify-content: space-between
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+
+.temp__item
+  width: 292px
+  height: 140px
+  background-color: #bebebe
+  -webkit-box-shadow: 0 1px 6px 0 #70707066
+  box-shadow: 0 1px 6px 0 #70707066
+
+.temp__img
+  display: block
+  width: 100%
+  height: 100%
+
+
+
+
+
+
+
+
+// TEMP !!!!!!!!!!!!!!
+
+.wrapper-min-product
+  border: 1px solid #333333
+  display: flex
+  padding: 30px
+  background-color: #fff
+
+.min-product
+  margin-right: 35px
+  font-size: 14px
+  width: 150px
+  display: flex
+  flex-direction: column
+
+.quill__cur
+  img
+   cursor: pointer
+
+  //&__img-wrapper
+  //  width: 103px
+  //  display: flex
+  //  height: 140px
+  //  margin: 0 auto
+  //  overflow: hidden
+  //  margin-bottom: 10px
+  //
+  //  img
+  //    width: 100%
+  //    height: auto
+

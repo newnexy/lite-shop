@@ -1,0 +1,32 @@
+<!--<div *ngIf="product$ | async as product">-->
+<!--  <div class="product">-->
+<!--    <div>-->
+<!--      <button routerLink="/">Back</button>-->
+<!--      {{product.title}}-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<!--<div class="product">-->
+<!--  <div  *ngFor="let product of product$">-->
+
+<!--&lt;!&ndash;    <quill-view-html class="quill__cur" [content]="product.photo"></quill-view-html>&ndash;&gt;-->
+
+<!--    <button routerLink="/">Back</button>-->
+<!--    <span>{{product.type}}</span>-->
+<!--    <span>{{product.title}}</span>-->
+<!--    &lt;!&ndash;<span [innerHTML]="product.info"></span>&ndash;&gt;-->
+<!--    <span>Price: {{product.price}}$</span>-->
+<!--  </div>-->
+<!--</div>-->
+
+<div *ngFor="let product of product$">
+  <quill-view-html class="quill__cur" [content]="product.photo"></quill-view-html>
+  {{product.id}}
+  {{product.type}}
+  {{product.title}}
+  {{product.info}}
+</div>
+
+
+

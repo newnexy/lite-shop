@@ -1,0 +1,26 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "test start lite-shop server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "jsonwebtoken": "*",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "passport": "*",
+    "passport-jwt": "*",
+    "sequelize": "^6.3.5",
+    "sqlite": "^4.0.15",
+    "sqlite3": "^5.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

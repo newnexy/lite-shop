@@ -1,0 +1,16 @@
+
+<span class="min-product">
+
+<!--  <span class="min-product__img-wrapper" [innerHTML]="product.photo"></span>-->
+
+  <quill-view-html class="quill__cur" [content]="product.photo"></quill-view-html>
+
+  <span>{{product.type}}</span>
+  <span>{{product.title}}</span>
+  <!--<span [innerHTML]="product.info"></span>-->
+  <span>Price: {{product.price}}$</span>
+
+  <button [routerLink]="['/product', product.id]">Open</button>
+  <button [routerLink]="['/cart']">Add to cart</button>
+
+</span>

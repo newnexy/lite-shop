@@ -1,0 +1,31 @@
+<div class="admin-header">
+
+  <a href="/" class="admin-header__logo"></a>
+
+  <span class="admin-header__support">Service support</span>
+
+  <span class="admin-header__user">Alexandr Shumchuk</span>
+
+  <span class="admin-header__language">EU</span>
+
+</div>
+
+<div class="admin-content">
+
+  <ul *ngIf="auth.isAuthenticated(); else login" class="admin-nav">
+    <li><a [routerLink]="['/admin', 'add-page']">Add page</a></li>
+    <li><a [routerLink]="['/admin', 'dashboard']">Dashboard</a></li>
+    <li><a [routerLink]="['/admin', 'orders-page']">Orders</a></li>
+<!--    <li><a [routerLink]="['/admin', 'edit-page']">Edit products</a></li>-->
+  </ul>
+
+
+  <ng-template #login >
+    <app-auth></app-auth>
+  </ng-template>
+
+  <router-outlet></router-outlet>
+
+</div>
+
+

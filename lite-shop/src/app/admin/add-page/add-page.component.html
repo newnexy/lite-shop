@@ -1,0 +1,50 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <h1>Add product</h1>
+
+  <div class="form-control">
+    <label for="type">type</label>
+    <select formControlName="type">
+      <option value="Sport&Outdoor">Sport and Outdoor</option>
+      <option value="Games&consoles">Games and consoles</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Toys">Toys</option>
+    </select>
+    <div *ngIf="form.get('type').touched && form.get('type').invalid">
+      <small *ngIf="form.get('type').errors.required">Chose product type</small>
+    </div>
+  </div>
+
+  <div class="form-control">
+    <label for="title">Name</label>
+    <input id="title" type="title" formControlName="title">
+    <div *ngIf="form.get('title').touched && form.get('title').invalid">
+      <small *ngIf="form.get('title').errors.required">Enter product name</small>
+    </div>
+  </div>
+
+  <div class="form-control">
+    <label for="type">Photo:</label>
+
+    <quill-editor [modules]="config" formControlName="photo"></quill-editor>
+
+  </div>
+
+  <div class="form-control">
+    <label for="type">Information:</label>
+
+    <quill-editor formControlName="info"></quill-editor>
+
+  </div>
+
+  <div class="form-control">
+    <label for="price">Price</label>
+    <input id="price" type="price" formControlName="price">
+    <div *ngIf="form.get('price').touched && form.get('price').invalid">
+      <small *ngIf="form.get('price').errors.required">Enter product price</small>
+    </div>
+  </div>
+
+
+  <button type="submit" class="btn btn-primary btn-block" [disabled]="form.invalid || submitted">Add</button>
+
+</form>
